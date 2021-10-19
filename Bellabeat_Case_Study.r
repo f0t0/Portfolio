@@ -1,9 +1,11 @@
+#Phase 2: Prepare
 #Import Libraries to use for data analysis
 library(tidyverse)
 library(scales)
 library(lubridate)
 library(gridExtra)
 
+#Phase 3: Process
 #Input Datasets to R
 daily_activity <- read_csv("../input/fitabase-data-4121651216/dailyActivity_merged.csv")
 daily_sleep <- read_csv("../input/fitabase-data-4121651216/sleepDay_merged.csv")
@@ -66,6 +68,7 @@ daily_activity_sleep <- merge(daily_activityv02, daily_sleepv03,
 str(daily_activity_sleep)
 head(daily_activity_sleep, 6)
 
+#Phase 4: Analyze          
 #Datasets are filtered for the amount of sleep (420min = 7hrs)
 less_sleep <- daily_activity_sleep %>% 
   filter(TotalMinutesAsleep < 420)
@@ -89,7 +92,7 @@ enough_steps <- daily_activity_sleep %>%
 str(enough_steps)
 head(enough_steps, 6)
 
-
+#Phase 5: Share
 #Visualizing my dataset of less sleep, < 420, to see if there is any correlation with Calories
 ggplot(data = less_sleep) +
   geom_point(aes(x = Calories, y = TotalMinutesAsleep, color = "points")) +
