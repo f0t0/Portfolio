@@ -162,9 +162,9 @@ SELECT *
 FROM Portfolio.dbo.NashvilleHousing
 
 ALTER TABLE Portfolio.dbo.NashvilleHousing
-DROP COLUMN	OwnerAddress, TaxDistrict, PropertyAddress
+DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress
 
 ALTER TABLE Portfolio.dbo.NashvilleHousing
-DROP COLUMN	SaleDate
+DROP COLUMN SaleDate
 
 
