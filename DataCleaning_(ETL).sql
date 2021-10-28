@@ -1,3 +1,8 @@
+/*
+Data Cleaning (ETL)
+Skills used: CTE's, Temp Tables, Converting Data Types, Deleting Tables, Parsing, Joins
+*/
+
 SELECT * 
 FROM Portfolio.dbo.NashvilleHousing
 
