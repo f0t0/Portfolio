@@ -1,3 +1,10 @@
+/*
+
+Video Game Sales Data Exploration 
+Skills used: CTE's, Windows Functions, Aggregate Functions
+
+*/
+
 --Stakeholders want to know what is the most lucrative game per platform
 select *
 from vgsales
