@@ -1,3 +1,8 @@
+/*
+FipKart Ecommerce Data Analysis 
+Skills used: CTE's, Windows Functions, Subquerying, Aggregate Functions
+*/
+
 --most expensive model
 select *
 from flipkart_ecom
